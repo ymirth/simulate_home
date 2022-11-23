@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ThemeWidgetForm</class>
+ <widget class="QWidget" name="ThemeWidgetForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QChartView" name="co2View"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QChartView" name="temperatureView_2"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QChartView" name="humidityView_3"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QChartView" name="airView"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
